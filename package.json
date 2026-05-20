@@ -5,7 +5,7 @@
   "author": "Vaibhav Dangra vaibhav1180@gmail.com>",
   "type": "module",
   "bin": {
-    "epub-to-mdbook": "./index.mjs"
+    "epub-to-mdbook": "index.mjs"
   },
   "files": [
     "index.mjs",
