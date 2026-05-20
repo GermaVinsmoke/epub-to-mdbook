@@ -1,0 +1,43 @@
+{
+  "name": "epub-to-mdbook",
+  "version": "0.0.1",
+  "description": "Convert EPUB books to mdBook format",
+  "author": "Vaibhav Dangra vaibhav1180@gmail.com>",
+  "type": "module",
+  "bin": {
+    "epub-to-mdbook": "./index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "README.md"
+  ],
+  "scripts": {
+    "clean": "rm -rf my_mdbook",
+    "check": "node -c index.mjs",
+    "generate": "node index.mjs --epub ./<bookname>.epub",
+    "regenerate": "pnpm run clean && pnpm run generate",
+    "mdbook:serve": "mdbook serve -p 6001 my_mdbook",
+    "build": "pnpm run check && npm pack",
+    "build:dry": "pnpm run check && npm pack --dry-run",
+    "link:global": "pnpm link --global",
+    "publish:npm": "npm publish --access public",
+    "prepublishOnly": "pnpm run build:dry"
+  },
+  "keywords": [
+    "epub",
+    "mdbook",
+    "ebook",
+    "cli",
+    "converter"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "adm-zip": "^0.5.17",
+    "fast-xml-parser": "^5.8.0",
+    "turndown": "^7.2.4"
+  }
+}
