@@ -2,7 +2,12 @@
   "name": "epub-to-mdbook",
   "version": "0.0.2",
   "description": "Convert EPUB books to mdBook format",
-  "author": "Vaibhav Dangra vaibhav1180@gmail.com>",
+  "author": "Vaibhav Dangra <vaibhav1180@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GermaVinsmoke/epub-to-mdbook.git"
+  },
+  "homepage": "https://github.com/GermaVinsmoke/epub-to-mdbook.git",
   "type": "module",
   "bin": {
     "epub-to-mdbook": "index.mjs"
