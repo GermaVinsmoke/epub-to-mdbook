@@ -1,6 +1,6 @@
 {
   "name": "epub-to-mdbook",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert EPUB books to mdBook format",
   "author": "Vaibhav Dangra vaibhav1180@gmail.com>",
   "type": "module",
